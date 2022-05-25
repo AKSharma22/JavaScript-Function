@@ -1,0 +1,71 @@
+body{
+    padding: 0%;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    
+}
+/* style main container */
+.container{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    border: solid rgb(66, 62, 62) 2px;
+    padding: 30px;
+    background-color: white;
+    
+}
+/* style heading in container div */
+h1{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+/* style all input tags */
+input{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 0px;
+    width: 225px;
+}
+/* give color to error using class */
+.error{
+    color: red;
+    margin: 0px;
+    text-align: left;
+}
+/* style submit button using input tag and its type attributes */
+input[type ="submit"]{
+    font-size: 20px;
+    font-weight: bold;
+    width: 225px;
+    border: solid grey 2px;
+    border-radius: 5px;
+    
+    background-color: rgb(22, 162, 218);
+    color: aliceblue;
+    cursor: pointer;
+    margin-top: 18px;
+    border: 0px;
+}
+input[type ="submit"]:hover{
+
+    background-color: red;
+    cursor: pointer;
+}
+/* apply media screen for responsivenes */
+@media  screen and(max-width:760px) {
+
+     body{
+         display: block;
+     }
+     input{
+         width: auto;
+     }
+     input[type ="submit"]{
+         width: auto;
+     }
+}
